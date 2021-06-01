@@ -37,7 +37,7 @@
 
 
 //make connection
-$con = mysqli_connect('localhost','root','anusha','attendance');
+$con = mysqli_connect('localhost','root','','attendance');
 
     if ($con->connect_error){
         die("connection error");
@@ -91,7 +91,7 @@ while($post=mysqli_fetch_assoc($record)) {
 <?php
 if(isset($_POST['update'])) {
 
-    $conn = mysqli_connect('localhost','root','anusha','attendance');
+    $conn = mysqli_connect('localhost','root','','attendance');
 
     if ($con->connect_error){
         die("connection error");

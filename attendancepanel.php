@@ -35,7 +35,7 @@
 
     <!-- Checking if attendance is taken for today -->
          <?php 
-	          $con = mysqli_connect('localhost','root','anusha','attendance');
+	          $con = mysqli_connect('localhost','root','','attendance');
               $result = mysqli_query($con,"SELECT `date` FROM `attendance_taken` WHERE date = '$ThisDate'");
 			  $row = mysqli_fetch_array($result);
 			  $total = $row[0];
@@ -65,7 +65,7 @@
 			
 			
 			<?php 
-	          $con = mysqli_connect('localhost','root','anusha','attendance');
+	          $con = mysqli_connect('localhost','root','','attendance');
               $result = mysqli_query($con,"select count(1) FROM employee_details");
               $row = mysqli_fetch_array($result);
 
@@ -94,7 +94,7 @@
 
 
 //make connection
-$con = mysqli_connect('localhost','root','anusha','attendance');
+$con = mysqli_connect('localhost','root','','attendance');
 
     if ($con->connect_error){
         die("connection error");

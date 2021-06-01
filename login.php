@@ -30,7 +30,7 @@ session_start();
 <?php 
 
 //make connection
-$con = new mysqli('localhost','root','anusha','attendance');
+$con = new mysqli('localhost','root','','attendance');
 
 if ($con->connect_error){
 	die("connection error");

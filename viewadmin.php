@@ -51,7 +51,7 @@ if(isset($_GET['view_admin'])) {
 
 
 //make connection
-$con = mysqli_connect('localhost','root','anusha','attendance');
+$con = mysqli_connect('localhost','root','','attendance');
 
     if ($con->connect_error){
         die("connection error");

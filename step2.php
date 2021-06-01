@@ -38,7 +38,7 @@ if(isset($_GET['step2'])) {
 if(isset($_POST['change_password'])){
 
 //make connection
-$con = new mysqli('localhost','root','anusha','attendance');
+$con = new mysqli('localhost','root','','attendance');
 
 if ($con->connect_error){
 	die("connection error");
